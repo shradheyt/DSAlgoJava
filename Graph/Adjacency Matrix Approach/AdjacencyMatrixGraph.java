@@ -27,9 +27,9 @@ public class AdjacencyMatrixGraph implements Graph
         this.graphType = graphType;
 
         adjacencyMatrix = new int[numVertices][numVertices];
-        for(int i=0;i<numVertices;i++)
+        for(int i = 0;i < numVertices;i++)
         {
-            for(int j=0;j<numVertices;j++)
+            for(int j = 0;j < numVertices;j++)
             {
                 adjacencyMatrix[i][j] = 0;
             }
@@ -58,7 +58,7 @@ public class AdjacencyMatrixGraph implements Graph
         }
 
         List<Integer> adjacentVerticesList = new ArrayList<>();
-        for(int i=0;i<numVertices;i++)
+        for(int i = 0;i < numVertices;i++)
         {
             if(adjacencyMatrix[v][i] == 1)
                 adjacentVerticesList.add(i);
@@ -68,9 +68,9 @@ public class AdjacencyMatrixGraph implements Graph
     }
      void displayGraph()
     {
-        for(int i=0;i<numVertices;i++)
+        for(int i = 0;i < numVertices;i++)
         {
-            for(int j=0;j<numVertices;j++)
+            for(int j = 0;j < numVertices;j++)
             {
                 System.out.print(" " + adjacencyMatrix[i][j]);
             }
