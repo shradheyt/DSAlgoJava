@@ -32,5 +32,16 @@ public class MainClass
             DFS.depthFirstTraversal(graph,visited,i);
         }
 
+        System.out.println("\n===BFS");
+        for(int i = 0;i < 10;i++)
+        {
+            visited[i] = 0;
+        }
+
+        for(int i = 1;i < 10;i++)
+        {
+            BFS.breadthFirstTraversal(graph,visited,i);
+        }
+
     }
 }
