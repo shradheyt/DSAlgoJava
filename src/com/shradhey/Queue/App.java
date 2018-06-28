@@ -1,5 +1,7 @@
 package com.shradhey.Queue;
 
+import java.util.LinkedList;
+
 /**
  * Created by Shradhey Tripathi on 26-Jun-18.
  */
@@ -14,5 +16,7 @@ public class App {
         System.out.println(queue.size());
         System.out.println(queue.dequeue());
         System.out.println(queue.dequeue());
+
+
     }
 }
