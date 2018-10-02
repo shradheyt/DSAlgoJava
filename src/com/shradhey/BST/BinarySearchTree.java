@@ -87,24 +87,9 @@ public class BinarySearchTree<T extends Comparable<T>> implements Tree<T>  {
                 node = null;
                 return temp;
             }
-            // this is the node with 2 children
-            System.out.println("Removing item with two children");
-            Node<T> tempNode = getPredecessor(node.getLeftChild());
-
-            node.setData(tempNode.getData());
-            node.setLeftChild(delete(node.getLeftChild(),tempNode.getData()));
-
         }
-        return node;
+        return null;
     }
-
-    private Node<T> getPredecessor(Node<T> node) {
-        if(node.getRightChild() != null) {
-            return getPredecessor(node.getRightChild());
-        }
-        return node;
-    }
-
     @Override
     public T getMaxValue() {
         if(root == null) return null;
