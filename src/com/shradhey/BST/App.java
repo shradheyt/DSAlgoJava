@@ -14,7 +14,9 @@ public class App {
         bst.insert("Gagan");
         bst.insert("Shivam");
         bst.insert("tripathi");
-        bst.delete("Adam");
+
+        System.out.println(bst.getMinValue());
+        System.out.println(bst.getMaxValue());
         bst.traverse();
     }
 }
