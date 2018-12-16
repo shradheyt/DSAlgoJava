@@ -14,4 +14,5 @@ public class Algorithm {
     public int calculateFactorial(int n) {
         return factorial(1,n);
     }
+
 }
